@@ -96,6 +96,7 @@ class ControlState extends State<Control> with SingleTickerProviderStateMixin {
         }
       },
       child: MouseRegion(
+        cursor: SystemMouseCursors.basic,
         onHover: (_) => _cancelAndRestartTimer(),
         child: AbsorbPointer(
           absorbing: _hideControls,
